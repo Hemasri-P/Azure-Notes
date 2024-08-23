@@ -222,6 +222,86 @@
 - ![alt text](image-9.png)
 - ![alt text](image-10.png)
 
+## Friday(23/08/2024)
+
 ## Azure App Service
 
+- Enables you to build and host webapps, background jobs, mobile back ends and RESTFul API's
+- ![alt text](image-11.png)
+- AutoScalling
+- High Avaialability : Never down
+- Supports Windows and Linux only
+
+## Types of App Service
+
+- ![alt text](image-12.png)
+- Web Apps :
+- API Apps
+- Web Jobs
+- MObile Apps
+
+## Azure App Service BackUp
+
+- ![alt text](image-13.png)
+- ![alt text](image-14.png)
+
+## Deployment Settings
+
+- ![alt text](image-15.png)
+- ![alt text](image-16.png)
+
+## App Service- Security
+
+- ![alt text](image-17.png)
+
+## Containers
+
+- Wrap up an application into its own isolated package
+- ![alt text](image-18.png)
+
+## ACI[container Instance] vs AKI[Kubernet Instance]
+
+- ![alt text](image-19.png)
+- ![alt text](image-20.png)
+- ![alt text](image-21.png)
+
+## Virtual Machine vs COntainer
+
+- ![alt text](image-22.png)
+- spin up : refresh the system
+
+## Docker & Azure Container Registry
+
+- ![alt text](image-23.png)
+
+## Docker
+
+- ![alt text](image-24.png)
+- ![alt text](image-25.png)
+- ![alt text](image-26.png)
+- ![alt text](image-27.png)
+- ![alt text](image-28.png)
+- ![alt text](image-29.png)
+- ![alt text](image-30.png)
+
+## Kubernetes
+
+- ![alt text](image-31.png)
+- ![alt text](image-32.png)
+- ![alt text](image-33.png)
+- ![alt text](image-34.png)
+- ![alt text](image-35.png)
+
+## Kubernetes architecure
+
+- ![alt text](image-36.png)
+- ![alt text](image-37.png)
+- ![alt text](image-39.png)
+
+## Azure Kubernetes Services
+
+- ![alt text](image-40.png)
+- ![alt text](image-41.png)
+- ![alt text](image-42.png)
+- ![alt text](image-43.png)
 -
