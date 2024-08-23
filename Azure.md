@@ -352,4 +352,27 @@
 
 - ![alt text](image-155.png)
 - ![alt text](image-156.png)
+- ![alt text](image-157.png)
+
+## Service Chaining
+
+- ![alt text](image-158.png)
+- ![alt text](image-159.png)
+- ![alt text](image-160.png)
+
+## Domain Name System
+
+- ![alt text](image-161.png)
+- ![alt text](image-162.png)
+
+## Azure DNS
+
+- ![alt text](image-163.png)
+- ![alt text](image-164.png)
+- ![alt text](image-165.png)
+- ![alt text](image-166.png)
+- ![alt text](image-167.png)
+- ![alt text](image-168.png)
+- ![alt text](image-169.png)
+- ![alt text](image-170.png)
 -
