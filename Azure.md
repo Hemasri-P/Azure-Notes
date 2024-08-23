@@ -315,4 +315,14 @@
 - ![alt text](image-136.png)
 - ![alt text](image-137.png)
 - ![alt text](image-138.png)
+- ![alt text](image-139.png)
+
+## Public Vs Private IP Address
+
+- ![alt text](image-140.png)
+- ![alt text](image-141.png)
+
+## Virtual net[Vnet]
+
+- ![alt text](image-142.png)
 -
