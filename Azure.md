@@ -390,4 +390,43 @@
 - ![alt text](image-180.png)
 - ![alt text](image-181.png)
 - ![alt text](image-182.png)
+- ![alt text](image-183.png)
+- ![alt text](image-184.png)
+- ![alt text](image-185.png)
+
+## Load Balancer
+
+- ![alt text](image-186.png)
+
+## Application GateWay
+
+- ![alt text](image-187.png)
+
+## URL path based routing
+
+- ![alt text](image-188.png)
+
+## Multi site Routing
+
+- ![alt text](image-189.png)
+  ##V web application FireWall[WAF]
+- ![alt text](image-190.png)
+
+## Application Gateway Components
+
+- ![alt text](image-191.png)
+
+## Virutual WAn
+
+![alt text](image-192.png)
+
+## Express Route
+
+- ![alt text](image-193.png)
+- ![alt text](image-194.png)
+- ![alt text](image-195.png)
+- ![alt text](image-196.png)
+- ![alt text](image-197.png)
+- ![alt text](image-198.png)
+- ![alt text](image-199.png)
 -
