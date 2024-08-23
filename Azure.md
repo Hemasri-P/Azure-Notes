@@ -325,4 +325,31 @@
 ## Virtual net[Vnet]
 
 - ![alt text](image-142.png)
+- ![alt text](image-143.png)
+- ![alt text](image-144.png)
+- ![alt text](image-145.png)
+- ![alt text](image-146.png)
+- ## Subnet masking
+- ![alt text](image-147.png)
+- ![alt text](image-148.png)
+- ![alt text](image-149.png)
+
+## NIC Network Interface card : generated automatically whenever a vn is created
+
+- ![alt text](image-150.png)
+
+## User Defined Route [UDR]
+
+- ![alt text](image-151.png)
+- ![alt text](image-152.png)
+
+## Network peering
+
+- ![alt text](image-153.png)
+- ![alt text](image-154.png)
+
+## Virtual Private Network[VPN]
+
+- ![alt text](image-155.png)
+- ![alt text](image-156.png)
 -
