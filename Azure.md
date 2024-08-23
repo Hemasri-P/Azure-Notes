@@ -416,7 +416,7 @@
 
 - ![alt text](image-191.png)
 
-## Virutual WAn
+## Virutual WAN
 
 ![alt text](image-192.png)
 
@@ -429,4 +429,16 @@
 - ![alt text](image-197.png)
 - ![alt text](image-198.png)
 - ![alt text](image-199.png)
+- ![alt text](image-200.png)
+- ![alt text](image-201.png)
+
+## Azure Monitor
+
+- ![alt text](image-202.png)
+- ![alt text](image-203.png)
+- ![alt text](image-204.png)
+
+## Powershell cli commands
+
+- ![alt text](image-205.png)
 -
