@@ -12,7 +12,7 @@
 
 - ![alt text](image-50.png)
 - internet based computing
-- ondemand resources delivered to your over the intenet
+- ondemand resources delivered to your over the internet
 - same resources shared by multiple clients
 - Ex : Gmail , Netflix
 - Set Budget :
@@ -218,4 +218,10 @@
 ## ARM
 
 - ![alt text](image-7.png)
+- ![alt text](image-8.png)
+- ![alt text](image-9.png)
+- ![alt text](image-10.png)
+
+## Azure App Service
+
 -
