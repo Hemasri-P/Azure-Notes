@@ -496,3 +496,12 @@
 - ![alt text](image-217.png)
 - 3. Networking
 - 4. Security
+- 1. Azure Computation
+     ![alt text](image-218.png)
+- virtual machine
+- container
+- Severless computing
+- 2 Storage
+- ![alt text](image-219.png)
+- 3. Networking
+- ![alt text](image-220.png)
