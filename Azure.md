@@ -442,4 +442,57 @@
 
 ## Wednesday(28/08/2024)
 
--
+## Azure Training
+
+## Cloud Computing
+
+- ![alt text](image-206.png)
+- Pay as you go
+- server less computing
+- infinite storage
+
+## SAAS
+
+- ![alt text](image-207.png)
+- ![alt text](image-214.png)
+- Scalability : Use as you go
+- Accessibility : How much we access
+- Auto Scaling group : automatically increse/decrease based on requirement
+- Cost-effectiveness :
+- Active Directory :user credentiALS ARE STORED her
+
+## IAAS
+
+- ![alt text](image-208.png)
+
+## PAAS
+
+- ![alt text](image-209.png)
+- Develpement -->Testing[SIT, UAT,Integration Testing] --->Production[pre, production]
+- Hybrid Cloud
+- Both features of IAAS and SAAS
+  ![alt text](image-210.png)
+- ![alt text](image-211.png)
+- Abstraction : data Hiding
+- ![alt text](image-212.png)
+- Paramters : for complex
+- No of users
+- turn around time
+- Space /storage
+- ![alt text](image-213.png)
+
+## Azure
+
+- ![alt text](image-215.png)
+- cloud platform
+
+## Azure Services
+
+- ![alt text](image-216.png)
+- 1. Computation :trying to execute on server less machine
+- 2. Storage : files , queues , tables and disks
+- Container : place to store
+- Virtual machine : is on cloud , to host application , server less machine
+- ![alt text](image-217.png)
+- 3. Networking
+- 4. Security
