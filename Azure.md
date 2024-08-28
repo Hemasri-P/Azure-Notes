@@ -92,7 +92,6 @@
 
 - User accounts , resources created by users , we will get subscription id we have to pay
 - ![alt text](image-75.png)
--
 
 ## Management Groups :
 
@@ -100,7 +99,6 @@
 - Helps us to manage for multiple Subscriptions.Big companies uses it
 - ![alt text](image-76.png)
 - Each Management Groups[Parent] have many childs
--
 
 ## Azure Resource Manager[ARM] :
 
@@ -441,4 +439,7 @@
 ## Powershell cli commands
 
 - ![alt text](image-205.png)
+
+## Wednesday(28/08/2024)
+
 -
