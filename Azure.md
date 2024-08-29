@@ -501,9 +501,44 @@
 - virtual machine
 - container
 - Severless computing
-- 2 Storage
+- 2. Azure Storage
 - ![alt text](image-219.png)
 - 3. Networking
 - ![alt text](image-220.png)
-- 4. Azure Security
+- 4. Azure Security : stores passwords , important data
 - ![alt text](image-221.png)
+- Identity management : gives access to users , and provides services after verifying user credentials , having 2 methods
+- Azure Active Directory for authentication[ checking user credentials] and authorization[giving access]
+- Data Encryption
+- Threat Protecion
+- 5. Azure Monitoring : monitors the billing , costs of users , sends alerts to users through sms, mails regarding how much we have used on azure
+- ![alt text](image-222.png)
+
+## Web Jobs: Background tasks that are run in azure
+
+- ![alt text](image-223.png)
+- Background tasks that are run in azure
+- Run by processor manager
+- It automates the various tasks like processing , sending mails , monotoring our applications
+- Azure monitoring beacause of webjibs
+
+## Benefits of Webjobs
+
+- ![alt text](image-224.png)
+
+## Types of Webjobs
+
+- ![alt text](image-225.png)
+- 1. continuous wejobs : It runs continuously as long as they are active , ideal for longtime-running tasks like monitoring and data processing.
+- 2. Triggered webjobs : Activated for specific tasks/events such as new files in a storage acount or messages in a queue
+- 3. Scheduled webjobs : Executed according to a defined schedule , such a daily , weekly , or monthly for tasks requiring regular execution
+
+## Deploying Webjobs
+
+- ![alt text](image-226.png)
+
+## Monotoring and Debugging Webjobs
+
+- ![alt text](image-227.png)
+- ![alt text](image-228.png)
+-
