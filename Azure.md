@@ -541,4 +541,15 @@
 
 - ![alt text](image-227.png)
 - ![alt text](image-228.png)
+
+## Introduction to Container and Docker
+
+### Container
+
+- ![alt text](image-229.png)
+- lightweight , package it includes everything needed to run on an application
+
+## Benefits of Containerization
+
+- ![alt text](image-230.png)
 -
