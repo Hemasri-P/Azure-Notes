@@ -552,4 +552,15 @@
 ## Benefits of Containerization
 
 - ![alt text](image-230.png)
--
+- Docker :
+- ![alt text](image-231.png)
+- ![alt text](image-232.png)
+
+## Docker Architecuture
+
+- ![alt text](image-233.png)
+- Docker Clients : commands
+- Docker Daemon : Server/host machine
+- Docker Image : Instructions to create a contaner
+- Registry :n stored images
+- Design a docker image for any aplication depoyment
