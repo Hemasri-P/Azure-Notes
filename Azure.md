@@ -562,5 +562,14 @@
 - Docker Clients : commands
 - Docker Daemon : Server/host machine
 - Docker Image : Instructions to create a contaner
-- Registry :n stored images
-- Design a docker image for any aplication depoyment
+- Registry : stores images
+- Design a docker image for any aplication deployment
+
+## Azure Resource manager : Is in json format
+
+## Docker Images
+
+- ![alt text](image-234.png)
+- ![alt text](image-235.png)
+- ![alt text](image-236.png)
+- Cosmos DB : Azure self developed Data base
