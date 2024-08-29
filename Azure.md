@@ -475,7 +475,7 @@
 - ![alt text](image-211.png)
 - Abstraction : data Hiding
 - ![alt text](image-212.png)
-- Paramters : for complex
+- Paramters : for compute
 - No of users
 - turn around time
 - Space /storage
@@ -497,7 +497,7 @@
 - 3. Networking
 - 4. Security
 - 1. Azure Computation
-     ![alt text](image-218.png)
+- ![alt text](image-218.png)
 - virtual machine
 - container
 - Severless computing
@@ -505,3 +505,5 @@
 - ![alt text](image-219.png)
 - 3. Networking
 - ![alt text](image-220.png)
+- 4. Azure Security
+- ![alt text](image-221.png)
