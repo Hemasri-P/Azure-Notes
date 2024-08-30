@@ -444,12 +444,19 @@
 
 ## Azure Training
 
-## Cloud Computing
+## Cloud Computing : take features from onpremises[server] to cloud[serverless]
 
+- physically we can see a server
 - ![alt text](image-206.png)
-- Pay as you go
-- server less computing
+- Pay as you go[Costing]
+- server less computing[cloud]
 - infinite storage
+
+## Shared Responsibilty Module :
+
+- avaialability zone , resource group , services of azure etc.
+- Avaialabilty zone : avaialability high , region can contains multiple avaialability zones/one AZ
+- Resource Group :
 
 ## SAAS
 
@@ -505,6 +512,9 @@
 - ![alt text](image-219.png)
 - 3. Networking
 - ![alt text](image-220.png)
+
+## Thursday(29/08/2024)
+
 - 4. Azure Security : stores passwords , important data
 - ![alt text](image-221.png)
 - Identity management : gives access to users , and provides services after verifying user credentials , having 2 methods
