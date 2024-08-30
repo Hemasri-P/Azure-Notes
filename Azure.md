@@ -612,11 +612,26 @@
 - ARM template :
 - A JavaScript Object Notation (JSON) file that defines one or more resources to deploy to a resource group, subscription etc...
 - 1 Project have 1 ARM
--
 
 ## Container :
 
 - contains zip , files , codes , all
 - Container Engine :Docker
-- CICD : automtatically dones the tasks like releases, tages , versions etc..
+- CICD : automtatically dones the tasks like releases, tags , versions etc..
+- Vm - can create os, files
+- azure will deploy the container
+
+## Resource vs Services :
+
+- A service is a set of features in Azure
+- A resource is the product or object of a service.
+- ![alt text](image-237.png)
+
+## Choosing Azurr Regions
+
+- ![alt text](image-238.png)
+- Latency : when any user requesting a service , it will takes time to respond i.e "Latency"[Delay]
+- Data Sovereignty : mainatenace of data
+- Pricing : Cost
+- Avaialability Zones : utilizing zones for resources by deploying our application across physically seperated data centre[Backup] within a region
 -
