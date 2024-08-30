@@ -611,7 +611,7 @@
 - ARM uses resource providers to create, update, delete, or retrieve resources in an Azure environment.
 - ARM template :
 - A JavaScript Object Notation (JSON) file that defines one or more resources to deploy to a resource group, subscription etc...
-- 1 Project have 1 ARM
+- 1 Project have 1 ARM , ARM creates Automatically
 
 ## Container :
 
@@ -627,11 +627,19 @@
 - A resource is the product or object of a service.
 - ![alt text](image-237.png)
 
-## Choosing Azurr Regions
+## Choosing Azure Regions
 
 - ![alt text](image-238.png)
 - Latency : when any user requesting a service , it will takes time to respond i.e "Latency"[Delay]
 - Data Sovereignty : mainatenace of data
 - Pricing : Cost
 - Avaialability Zones : utilizing zones for resources by deploying our application across physically seperated data centre[Backup] within a region
--
+- ![alt text](image-239.png)
+- Disaster Recover[DR]
+- Azure Content Delivary Networ[CDN]
+- Resource manAGER - RESOURCES\_\_>ALL
+
+## Microservices :
+
+- ![alt text](image-240.png)
+- Independent Deployment : releasing versions one after another
