@@ -573,3 +573,7 @@
 - ![alt text](image-235.png)
 - ![alt text](image-236.png)
 - Cosmos DB : Azure self developed Data base
+
+## Friday(30/08/2024)
+
+-
