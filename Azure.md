@@ -599,7 +599,7 @@
 - Repository : place where all codes are available
 - Source Code Management : tool to maintain codes
 - main branch : Production Environement
-- Ops : PRoduction
+- Ops : Production
 - ITSM : Information technology service management
 - 3 parts :Source code management, Staging , Deplyoment -->Deployment Life cycle /PipeLine
 - Continuous Integration :
@@ -612,4 +612,11 @@
 - ARM template :
 - A JavaScript Object Notation (JSON) file that defines one or more resources to deploy to a resource group, subscription etc...
 - 1 Project have 1 ARM
+-
+
+## Container :
+
+- contains zip , files , codes , all
+- Container Engine :Docker
+- CICD : automtatically dones the tasks like releases, tages , versions etc..
 -
