@@ -586,4 +586,30 @@
 
 ## Friday(30/08/2024)
 
+## Rivison on Previous Topics :
+
+- Resouce Group : A resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution, or only those resources that you want to manage as a group.
+- stores metadata about the resources.
+- Virtual Machine : Service
+
+### Devops : Done Manually
+
+- Developement Operations
+- It having branches
+- Repository : place where all codes are available
+- Source Code Management : tool to maintain codes
+- main branch : Production Environement
+- Ops : PRoduction
+- ITSM : Information technology service management
+- 3 parts :Source code management, Staging , Deplyoment -->Deployment Life cycle /PipeLine
+- Continuous Integration :
+- Continuous Developement:
+
+## ARM :
+
+- Azure Resource Manager (ARM) is a Microsoft Azure service that helps users manage and deploy resources for their Azure account
+- ARM uses resource providers to create, update, delete, or retrieve resources in an Azure environment.
+- ARM template :
+- A JavaScript Object Notation (JSON) file that defines one or more resources to deploy to a resource group, subscription etc...
+- 1 Project have 1 ARM
 -
