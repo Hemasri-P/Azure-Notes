@@ -643,3 +643,15 @@
 
 - ![alt text](image-240.png)
 - Independent Deployment : releasing versions one after another
+- Technology Diversity : Different services can use different technologies , allowing teams to choose the best tool for the job.
+- Improved scalability : based on demand it allows scaling
+- Resilience and Fault Tolerance : Failures in one service are less likely to impact other services , improving application resilience
+- ![alt text](image-241.png)
+- Consistency : maintaining same data by not decreasing
+- Increased Complexity :
+- Distributed Complexity:
+
+## Microservices Architecture
+
+- ![alt text](image-242.png)
+- ![alt text](image-243.png)
