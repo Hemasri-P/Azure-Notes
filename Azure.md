@@ -655,3 +655,26 @@
 
 - ![alt text](image-242.png)
 - ![alt text](image-243.png)
+
+## Git
+
+- Git is an open-source distributed version control in DevOps
+- ![alt text](image-244.png)
+
+## Question 1 :
+
+The development teams that support the Agile approach to DevOps must include staff from the operations teams to ensure:
+
+- A) That stability is prioritised over creativity
+- B) Operational considerations are prioritised over stability
+- C) Operational considerations are taken into account
+- D) The resultant designs of the systems will fit nicely into the business as usual environment
+
+## Question 2 :
+
+Which statement best describes the relationship between DevOps and Continuous Delivery?
+
+- A) DevOps and Continuous Delivery are the same thing.
+- B) DevOps and Continuous Delivery are not related and are mutually exclusive.
+- C) DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.
+- D) DevOps and Continuous Delivery share common processes.
