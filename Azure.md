@@ -684,9 +684,12 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Microservices Solid Principles :
 
 - ![alt text](image-245.png)
-- Single Responsibility : Eachmodule or a class should haeva one and only one reason to change
+- Single Responsibility : Each module or a class should have a one and only one reason to change
 - Open/Closed :Instead of modifying resources we can change services
-- Liskov Substitution: pay as you go , This means that objects of the child class should be able to substitute objects of the parent class without causing any issues or breaking the application's integrity.
+- Liskov Substitution: pay as you go like procedure, This means that objects of the child class should be able to substitute objects of the parent class without causing any issues or breaking the application's integrity.
+- Ex : ![alt text](image-246.png)
 - Interface Segregation :Azure uses logical isolation to segregate each customer’s data from the data of others. Segregation provides the scale and economic benefits of multi-tenant services while rigorously preventing customers from accessing one another’s data.
-- Depemdency Inversion : technique to achieve Inversion of Control (IoC) between classes and their dependencies. Dependency injection in Azure Functions is built on the.NET Core Dependency Injection features. Familiarity with.NET Core dependency injection is recommended.
--
+- Dependency Inversion/injection : Technique to achieve Inversion of Control (IoC) between classes and their dependencies. Dependency injection in Azure Functions is built on the.NET Core Dependency Injection features.
+- Ex : ![alt text](image-247.png)
+
+## Monolithic Application vs MicroService :
