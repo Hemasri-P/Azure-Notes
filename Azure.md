@@ -598,7 +598,7 @@
 - It having branches
 - Repository : place where all codes are available
 - Source Code Management : tool to maintain codes
-- main branch : Production Environement
+- main branch : Production Environment
 - Ops : Production
 - ITSM : Information technology service management
 - 3 parts :Source code management, Staging , Deplyoment -->Deployment Life cycle /PipeLine
@@ -661,7 +661,7 @@
 - Git is an open-source distributed version control in DevOps
 - ![alt text](image-244.png)
 
-## Question 1 :
+## Question 1 : C&D
 
 The development teams that support the Agile approach to DevOps must include staff from the operations teams to ensure:
 
@@ -670,7 +670,7 @@ The development teams that support the Agile approach to DevOps must include sta
 - C) Operational considerations are taken into account
 - D) The resultant designs of the systems will fit nicely into the business as usual environment
 
-## Question 2 :
+## Question 2 : C
 
 Which statement best describes the relationship between DevOps and Continuous Delivery?
 
@@ -678,3 +678,15 @@ Which statement best describes the relationship between DevOps and Continuous De
 - B) DevOps and Continuous Delivery are not related and are mutually exclusive.
 - C) DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.
 - D) DevOps and Continuous Delivery share common processes.
+
+## Monday (02/09/2024)
+
+## Microservices Solid Principles :
+
+- ![alt text](image-245.png)
+- Single Responsibility : Eachmodule or a class should haeva one and only one reason to change
+- Open/Closed :Instead of modifying resources we can change services
+- Liskov Substitution: pay as you go , This means that objects of the child class should be able to substitute objects of the parent class without causing any issues or breaking the application's integrity.
+- Interface Segregation :Azure uses logical isolation to segregate each customer’s data from the data of others. Segregation provides the scale and economic benefits of multi-tenant services while rigorously preventing customers from accessing one another’s data.
+- Depemdency Inversion : technique to achieve Inversion of Control (IoC) between classes and their dependencies. Dependency injection in Azure Functions is built on the.NET Core Dependency Injection features. Familiarity with.NET Core dependency injection is recommended.
+-
