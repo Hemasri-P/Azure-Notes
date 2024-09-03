@@ -693,3 +693,56 @@ Which statement best describes the relationship between DevOps and Continuous De
 - Ex : ![alt text](image-247.png)
 
 ## Monolithic Application vs MicroService :
+
+- ![alt text](image-248.png)
+
+## Tuesday(03/09/2024)
+
+- ![alt text](image-249.png)
+- ![alt text](image-250.png)
+- Branch Policy :who can access to which branch .
+
+## Kubernetes :
+
+- ![alt text](image-251.png)
+- ![alt text](image-252.png)
+- Pods : container
+- Cluster : summation of Pods
+
+## Architecture :
+
+- ![alt text](image-253.png)
+- Master Node : It manages all the slave nodes
+- Slave Node : Contains Pods[is equals to container]
+- Cluster made up of : Master node + Many Slave nodes
+- ![alt text](image-254.png)
+- Etcd : used to store the configuration ans state of the cluster
+- Kubelet[Processor] :runs on each slave node and manage the pods running on that node
+- ![alt text](image-255.png)
+- kube-apiserver: The core component server that exposes the Kubernetes HTTP API
+- etcd : Consistent and highly-available key value store for all API server data
+- kube-scheduler : Looks for Pods not yet bound to a node, and assigns each Pod to a suitable node.
+- kube-controller-manager
+  Runs controllers to implement Kubernetes API behavior.
+- cloud-controller-manager (optional)
+  Integrates with underlying cloud provider(s).
+- Kubernetes Pods : ![alt text](image-256.png)
+
+## cloud Shell commands
+
+- 1.To create Aplication NAme : az group create --name myapp-rg --location eastus
+- 2. To create Resource group :
+- az acr create --resource-group myapp-rg --name mycontainerregistry --sku Basic
+- az aks create\
+- ![alt text](image-257.png)
+
+## physical devices that connect to and exchange information with a computer network
+
+- Kubernetes Deployment :
+- ![alt text](image-258.png)
+- Kubernetes Services :
+- ![alt text](image-259.png)
+
+## Network Policy
+
+- ![alt text](image-260.png)
