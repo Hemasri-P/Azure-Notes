@@ -746,3 +746,9 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Network Policy
 
 - ![alt text](image-260.png)
+- ![alt text](image-261.png)
+
+## Design of Any Application
+
+- ![alt text](image-262.png)
+-
