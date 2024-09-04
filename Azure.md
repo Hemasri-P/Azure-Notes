@@ -712,11 +712,11 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Architecture :
 
 - ![alt text](image-253.png)
-- Master Node : It manages all the slave nodes
-- Slave Node : Contains Pods[is equals to container]
+- Master Node : It manages all the slave nodes , accessed only by Develeopers
+- Slave Node : Contains Pods[is equals to container] , it utuilizes the features of master , accessed by both users and developers.
 - Cluster made up of : Master node + Many Slave nodes
 - ![alt text](image-254.png)
-- Etcd : used to store the configuration ans state of the cluster
+- Etcd : used to store the configuration and state of the cluster
 - Kubelet[Processor] :runs on each slave node and manage the pods running on that node
 - ![alt text](image-255.png)
 - kube-apiserver: The core component server that exposes the Kubernetes HTTP API
@@ -751,4 +751,11 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Design of Any Application
 
 - ![alt text](image-262.png)
+- ![alt text](image-263.png)
+
+## Wednesday(04/09/2024)
+
+- Kubernetes Architecture
+- ![alt text](image-264.png)
+- Kubernetes supports all the feature like not specific to any programming languages , any applications etc..
 -
