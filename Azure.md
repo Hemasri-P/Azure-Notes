@@ -730,7 +730,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 
 ## cloud Shell commands
 
-- 1.To create Aplication NAme : az group create --name myapp-rg --location eastus
+- 1.To create Aplication Name : az group create --name myapp-rg --location eastus
 - 2. To create Resource group :
 - az acr create --resource-group myapp-rg --name mycontainerregistry --sku Basic
 - az aks create\
@@ -758,4 +758,13 @@ Which statement best describes the relationship between DevOps and Continuous De
 - Kubernetes Architecture
 - ![alt text](image-264.png)
 - Kubernetes supports all the feature like not specific to any programming languages , any applications etc..
+- Container Runtime(Docker) : containerisation
+- Network Proxy :application Run on Different Proxy
+- Kubelet : ![alt text](image-265.png)
+- why master node is depend on worker node :
+- ![alt text](image-266.png)
+- Master Node Also known as : Control plane Node
+- Having 3 features : Authentication , Authorization and Admission Control
+- User access workers to get the ms access via the pod but auth,authori and Access IS ALWAYS DONE FROM THE ROOT NODE/CONTROL PANE NODE
+- ![alt text](image-267.png)
 -
