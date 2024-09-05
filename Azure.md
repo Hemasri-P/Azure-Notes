@@ -767,4 +767,37 @@ Which statement best describes the relationship between DevOps and Continuous De
 - Having 3 features : Authentication , Authorization and Admission Control
 - User access workers to get the ms access via the pod but auth,authori and Access IS ALWAYS DONE FROM THE ROOT NODE/CONTROL PANE NODE
 - ![alt text](image-267.png)
--
+- Kubernetes Cluster : combination of master + worker node
+- ![alt text](image-268.png)
+- master node does not need kublet because it dont have runtime like docker
+- Replica Set : a controller that ensures a specified number of pod replicas are running at any given time.
+- replica set is applicable only for worker node , not master node
+- Couple of workers nodes that depend one on another and run together is a Replica Set
+- ![alt text](image-269.png)
+- ![alt text](image-270.png)
+- Namesapace :Unique name / Address/Location given to application to deploy in Kubernetes
+- ![alt text](image-276.png)
+- ![alt text](image-271.png)
+- ![alt text](image-272.png)
+- Namespace contains : service , pod
+- ![alt text](image-273.png)
+- Daemon Set : Service Provider , contains copy of all pods [Exactly One replica on each node] ,
+- ![alt text](image-274.png)
+- ![alt text](image-275.png)
+- Controller Manager[mcm] :![alt text](image-277.png)
+
+## Azure Kubernetes Service :
+
+- Used to deploy and manage containerized applications.
+- ![alt text](image-279.png)
+- aims to simplify the deployment and management of Kubernetes clusters
+
+## AKS Architecture :
+
+- ![alt text](image-278.png)
+- ![alt text](image-280.png)
+- Ingresses : Internally progres the services used to process the appplications and services too
+- ![alt text](image-281.png)
+- ![alt text](image-282.png)
+- Ingestion :
+- Nodepool:
