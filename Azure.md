@@ -836,3 +836,19 @@ Which statement best describes the relationship between DevOps and Continuous De
 
 - ![alt text](image-288.png)
 - ![alt text](image-289.png)
+
+## Namespace :
+
+- ![alt text](image-290.png)
+
+## Kubernetes Scaling and Autoscaling
+
+- ![alt text](image-291.png)
+- Manual Scaling : We are doing it manually
+- Horizontal Pod Autoscalar : Automatically scales base on cpu , memory or custom metrics
+- Verticl Pod Autoscalar : Automatically Adjust resource request and limits
+
+## Kubernetes Rolling Updates and Rollbacks :
+
+- ![alt text](image-292.png)
+-
