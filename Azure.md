@@ -812,3 +812,27 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Kubernetes Ingress Controller :
 
 - ![alt text](image-285.png)
+- Deployments happend in private Ip and service access given to public ip for users requests
+- Load balancer take srvice from azure kubernetes service to provide and manage the public IP address
+- Load Balancer : Break downs and try to release no of services
+- Ingress Controller is a Input and ingress controller service request and public ip to the running on pods, refreshes the pods
+- Ingestion : takes care of pods , taken care by AKS ,
+
+## Agile functionalities / azure devops features :
+
+- ![alt text](image-286.png)
+- Epic : High level users stories Task/features ,
+- epic is a taking feature to production
+- Stories : user stories , non technical explanation
+- task : technical functionalities
+- Example :
+- Epic : To Create s/w like camera
+- features : high resolution
+- Stories : 1.h/w , s/w , distance check , developers done this
+- task : sensor , developers done this
+- ![alt text](image-287.png)
+
+## Kunernetes CongigMaps And Secrets :
+
+- ![alt text](image-288.png)
+- ![alt text](image-289.png)
