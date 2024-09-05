@@ -801,3 +801,14 @@ Which statement best describes the relationship between DevOps and Continuous De
 - ![alt text](image-282.png)
 - Ingestion :
 - Nodepool:
+
+## Thursday(05/09/2024)
+
+### How Azure Kubernetes Service works in Real time :
+
+- ![alt text](image-283.png)
+- ![alt text](image-284.png)
+
+## Kubernetes Ingress Controller :
+
+- ![alt text](image-285.png)
