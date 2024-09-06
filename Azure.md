@@ -881,3 +881,39 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Difference between Hypervisor And Docker :
 
 - ![alt text](image-298.png)
+
+## Virtualization :
+
+- ![alt text](image-299.png)
+
+## Docker Container :
+
+- ![alt text](image-300.png)
+- Container : package , library , contains programming language , container runtime to deploy packages
+- Containerization : creating self containes pacakage
+- Docker :
+- ![alt text](image-301.png)
+
+## Container vs VMs
+
+- ![alt text](image-302.png)
+- Docker is a tool for managing containers and is commonly used in environments where containers are employed.
+- VMs provide a method for strong isolation and are crucial for certain applications or environments.
+- Containers offer an efficient way to package and run applications and are becoming increasingly popular.
+- A Docker container is a running instance of a Docker image. It includes the application code, runtime, libraries, and dependencies required to run the application, and operates in an isolated environment on the host system.
+
+## Docker Image :
+
+- ![alt text](image-303.png)
+- ![alt text](image-304.png)
+- Docker images are read-only templates used to create containers. They contain the application code, runtime, libraries, and other dependencies.
+- Images are built using a Dockerfile,
+
+## Docker Daemon :
+
+- a daemon is a background process that provides services or performs tasks on a computer system without direct user interaction. Daemons are integral to the operation of many system and network services, running autonomously and handling various functions to keep the system and applications running smoothly.
+
+## Docker Networking :
+
+- ![alt text](image-305.png)
+-
