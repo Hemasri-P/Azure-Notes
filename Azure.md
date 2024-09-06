@@ -877,5 +877,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 - ![alt text](image-296.png)
 - Types : ![alt text](image-297.png)
 - Type 2 is better beacaue it folows shared responsibility model and less cost
--
--
+
+## Difference between Hypervisor And Docker :
+
+- ![alt text](image-298.png)
