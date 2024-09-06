@@ -876,7 +876,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 - takes care of docker will be running / Monitor
 - ![alt text](image-296.png)
 - Types : ![alt text](image-297.png)
-- Type 2 is better beacaue it folows shared responsibility model and less cost
+- Type 2 is better beacause it folows shared responsibility model and less cost
 
 ## Difference between Hypervisor And Docker :
 
@@ -916,4 +916,15 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Docker Networking :
 
 - ![alt text](image-305.png)
+
+## Docker Volume :
+
+- ![alt text](image-306.png)
+- ![alt text](image-307.png)
+- ![alt text](image-308.png)
+
+## Docker Compose
+
+- reduce hardware ; creates the images ,
+- ![alt text](image-309.png)
 -
