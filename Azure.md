@@ -832,7 +832,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 - task : sensor , developers done this
 - ![alt text](image-287.png)
 
-## Kunernetes CongigMaps And Secrets :
+## Kunernetes ConfigMaps And Secrets :
 
 - ![alt text](image-288.png)
 - ![alt text](image-289.png)
@@ -851,4 +851,31 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Kubernetes Rolling Updates and Rollbacks :
 
 - ![alt text](image-292.png)
+
+## Question :
+
+- In designing a high-availability cluster for an e-commerce platform, we deployed a multi-master setup across three availability zones, with etcd members distributed similarly to ensure data redundancy. A TCP load balancer was configured to distribute API requests to the API servers, ensuring no single point of failure. We also implemented node auto-repair with Kubernetes Engine to automatically replace unhealthy nodes.
+- Example :
+- Taking Netflix scenario as example it consists of multiple master nodes across multiple clusters which are deployed across 3 availability zones .
+  The user's request to load the video streaming it uses Load Balancer and the TCP load balancer receives the request and distributes it to one of the available API servers.
+  The API server processes the request, retrieves data from backend services like video and sends the response back to the user. During peak hours like live streaming it uses Auto scaling in Kubernetes and Kubernetes performs a rolling update, gradually updating the application pods while keeping the old version running until the new version is fully deployed. and manages the sensitive data .Disaster Recovery: The service remains operational even during large-scale outages, ensuring continued availability for users.
+
+## Kubernetes Monitoring And LOgging :
+
+- ![alt text](image-293.png)
+- kubernetes Fleet manager
+
+## Friday(06/09/2024)
+
+## Docker : Containerized Application
+
+- ![alt text](image-294.png)
+- Mediator b/w application and infrastrcture
+- ![alt text](image-295.png)
+- Hypervisor = Ingregation b/w docker and infra
+- takes care of docker will be running / Monitor
+- ![alt text](image-296.png)
+- Types : ![alt text](image-297.png)
+- Type 2 is better beacaue it folows shared responsibility model and less cost
+-
 -
