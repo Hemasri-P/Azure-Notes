@@ -936,4 +936,20 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Docker Architecture :
 
 - ![alt text](image-311.png)
+- Docker Host : contains Containers , Images
+- A Docker host is a physical or virtual server that runs Docker containers. It houses the Docker Engine, which is responsible for managing and running the containers. The host can be your local machine or a remote server
+- Docker Daemon : creates images , and get images from docker Registry ,
+- ![alt text](image-312.png)
+- ![alt text](image-313.png)
+- Docker Dameon : ![alt text](image-314.png)
+- It handles various tasks including container creation, execution, and monitoring. In a nutshell, it acts as a bridge between the Docker client and the Docker engine following Client-Server Architecture. Docker daemon executes commands issued by the client by translating them into actionable operations within the Docker environment.
+- Docker Registry : Personal location to store Docker images
+- It allows you to balance the load, customize the authentication and logging, and make many more configuration changes . It takes data from Clients and
+  ![alt text](image-315.png)
+- Docker Commands : ![alt text](image-316.png)
+- Internal Process of pull push build and run
+- ![alt text](image-317.png)
+- Docker Hub : ![alt text](image-318.png)
+- Docker Hub is a repository service and it is a cloud-based service where people push their Docker Container Images and also pull the Docker Container Images from the Docker Hub anytime or anywhere via the internet. It provides features such as you can push your images as private or public.
+- ![alt text](image-319.png)
 -
