@@ -925,6 +925,9 @@ Which statement best describes the relationship between DevOps and Continuous De
 
 ## Docker Compose
 
-- reduce hardware ; creates the images ,
+- Reduce hardware , creates the images
 - ![alt text](image-309.png)
+
+## Monday(09/09/2024)
+
 -
