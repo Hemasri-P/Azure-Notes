@@ -952,4 +952,20 @@ Which statement best describes the relationship between DevOps and Continuous De
 - Docker Hub : ![alt text](image-318.png)
 - Docker Hub is a repository service and it is a cloud-based service where people push their Docker Container Images and also pull the Docker Container Images from the Docker Hub anytime or anywhere via the internet. It provides features such as you can push your images as private or public.
 - ![alt text](image-319.png)
--
+- ![alt text](image-320.png)
+- ![alt text](image-321.png)
+
+## Internal Architecture of Docker :
+
+- ![alt text](image-322.png)
+
+## Docker 8 Usescases :
+
+- ![alt text](image-323.png)
+
+## Tenancy : classified based om usecase
+
+- 1 tenant have multiple usecases
+- Multiple tenancy : ![alt text](image-324.png)
+- Example : ![alt text](image-325.png)
+- Example : ![alt text](image-326.png)
