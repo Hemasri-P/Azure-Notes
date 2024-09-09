@@ -969,3 +969,11 @@ Which statement best describes the relationship between DevOps and Continuous De
 - Multiple tenancy : ![alt text](image-324.png)
 - Example : ![alt text](image-325.png)
 - Example : ![alt text](image-326.png)
+
+## Exposed Ports : container port publishing
+
+- instancs which are running
+- ![alt text](image-327.png)
+- network ports on a Docker container that are made available for communication between the container and the outside world (e.g., other containers, the host machine, or external clients). These are the ports that the containerized application listens to for incoming traffic.
+
+## created Fucntion App : Practical things
