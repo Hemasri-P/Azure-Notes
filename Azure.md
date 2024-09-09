@@ -911,7 +911,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 
 ## Docker Daemon :
 
-- a daemon is a background process that provides services or performs tasks on a computer system without direct user interaction. Daemons are integral to the operation of many system and network services, running autonomously and handling various functions to keep the system and applications running smoothly.
+- a Daemon is a background process that provides services or performs tasks on a computer system without direct user interaction. Daemons are integral to the operation of many system and network services, running autonomously and handling various functions to keep the system and applications running smoothly.
 
 ## Docker Networking :
 
@@ -926,8 +926,14 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Docker Compose
 
 - Reduce hardware , creates the images
+- tool for defining and running multi-container applications
 - ![alt text](image-309.png)
 
 ## Monday(09/09/2024)
 
+- ![alt text](image-310.png)
+
+## Docker Architecture :
+
+- ![alt text](image-311.png)
 -
