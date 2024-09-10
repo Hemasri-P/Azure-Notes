@@ -874,9 +874,20 @@ Which statement best describes the relationship between DevOps and Continuous De
 - ![alt text](image-295.png)
 - Hypervisor = Ingregation b/w docker and infra
 - takes care of docker will be running / Monitor
+- A hypervisor is like a manager that helps a single physical computer run multiple virtual computers
 - ![alt text](image-296.png)
 - Types : ![alt text](image-297.png)
 - Type 2 is better beacause it folows shared responsibility model and less cost
+
+- Type 1 Hypervisor (Bare-Metal):
+- Runs Directly on Hardware: It installs directly on the physical computer and does not need a host operating system.
+- Example: VMware ESXi, Microsoft Hyper-V.
+- Usage: Often used in data centers and for server virtualization.
+
+- Type 2 Hypervisor (Hosted):
+- Runs on Top of a Host OS: It installs on an existing operating system like an application.
+- Example: VMware Workstation, Oracle VirtualBox.
+- Usage: Commonly used on personal computers for testing and development.
 
 ## Difference between Hypervisor And Docker :
 
@@ -976,7 +987,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 - ![alt text](image-327.png)
 - network ports on a Docker container that are made available for communication between the container and the outside world (e.g., other containers, the host machine, or external clients). These are the ports that the containerized application listens to for incoming traffic.
 
-## Created Fucntion App : Practical things
+## Created Funtion App , ubuntu of Docker : Practical things
 
 ## Capstone :
 
@@ -988,4 +999,11 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Summary of Devops :
 
 - ![alt text](image-330.png)
+- ![alt text](image-331.png)
+- IAM : gives access and utilizing resources
+- Subscription : Authorization
+- Resource Group:Reorganization , used in clous and Azure
+- ![alt text](image-332.png)
+- Service Conncetion integrates with the Azure cloud
+- Azure Service Principle Name : gives connection and access controlles , to access and manage resources
 -
