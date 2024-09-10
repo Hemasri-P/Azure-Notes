@@ -976,4 +976,10 @@ Which statement best describes the relationship between DevOps and Continuous De
 - ![alt text](image-327.png)
 - network ports on a Docker container that are made available for communication between the container and the outside world (e.g., other containers, the host machine, or external clients). These are the ports that the containerized application listens to for incoming traffic.
 
-## created Fucntion App : Practical things
+## Created Fucntion App : Practical things
+
+## Capstone :
+
+- ![alt text](image-328.png)
+- ![alt text](image-329.png)
+-
