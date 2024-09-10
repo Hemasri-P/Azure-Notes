@@ -982,4 +982,10 @@ Which statement best describes the relationship between DevOps and Continuous De
 
 - ![alt text](image-328.png)
 - ![alt text](image-329.png)
+
+## Tuesday(10/09/2024)
+
+## Summary of Devops :
+
+- ![alt text](image-330.png)
 -
