@@ -888,6 +888,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 - Runs on Top of a Host OS: It installs on an existing operating system like an application.
 - Example: VMware Workstation, Oracle VirtualBox.
 - Usage: Commonly used on personal computers for testing and development.
+- ![alt text](image-333.png)
 
 ## Difference between Hypervisor And Docker :
 
@@ -1006,4 +1007,7 @@ Which statement best describes the relationship between DevOps and Continuous De
 - ![alt text](image-332.png)
 - Service Conncetion integrates with the Azure cloud
 - Azure Service Principle Name : gives connection and access controlles , to access and manage resources
--
+- ![alt text](image-334.png)
+- ![alt text](image-335.png)
+
+## Wednesday(11/09/2024)
