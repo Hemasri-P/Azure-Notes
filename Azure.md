@@ -1011,3 +1011,17 @@ Which statement best describes the relationship between DevOps and Continuous De
 - ![alt text](image-335.png)
 
 ## Wednesday(11/09/2024)
+
+## Rivison On Uncovered Topics : and
+
+## ArgoCd : Automatic Deployment
+
+- ![alt text](image-336.png)
+
+## Architecure of argocd :
+
+- ![alt text](image-337.png)
+
+## Argocd with CLI Kubernetes
+
+- ![alt text](image-338.png)
