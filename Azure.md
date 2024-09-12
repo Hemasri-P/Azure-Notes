@@ -1021,7 +1021,547 @@ Which statement best describes the relationship between DevOps and Continuous De
 ## Architecure of argocd :
 
 - ![alt text](image-337.png)
+- Argo CD automates the deployment of the desired application states in the specified target environments. Application deployments can track updates to branches, tags, or pinned to a specific version of manifests at a Git commit.
+-
 
 ## Argocd with CLI Kubernetes
 
 - ![alt text](image-338.png)
+
+##
+
+C:\Users\hemasri.pilli>kubectl create ns argocd
+namespace/argocd created
+
+C:\Users\hemasri.pilli>kubectl config current-context docker-desktop
+docker-desktop
+
+C:\Users\hemasri.pilli>kubectl config current-context
+docker-desktop
+
+C:\Users\hemasri.pilli>kubectl config use-context docker-desktop
+Switched to context "docker-desktop".
+
+C:\Users\hemasri.pilli>kubectl create ns hemasriargo
+namespace/hemasriargo created
+
+C:\Users\hemasri.pilli>kubectl cordon worker-1
+Error from server (NotFound): nodes "worker-1" not found
+
+C:\Users\hemasri.pilli>kubectl get pods
+NAME READY STATUS RESTARTS AGE
+mywebapi-deployment-75b9c5d85b-ccshs 1/1 Running 2 (3m27s ago) 42d
+mywebapi-deployment-75b9c5d85b-dljr8 1/1 Running 2 (3m27s ago) 42d
+mywebapi-deployment-75b9c5d85b-nfwvn 1/1 Running 2 (3m27s ago) 42d
+mywebapi-deployment-75b9c5d85b-w2f97 1/1 Running 2 (3m27s ago) 42d
+mywebapi-deployment-75b9c5d85b-zqfz5 1/1 Running 2 (3m27s ago) 42d
+
+C:\Users\hemasri.pilli>kubectl describe all
+Name: mywebapi-deployment-75b9c5d85b-ccshs
+Namespace: default
+Priority: 0
+Service Account: default
+Node: docker-desktop/192.168.65.3
+Start Time: Wed, 31 Jul 2024 12:45:49 +0530
+Labels: app=mywebapi
+pod-template-hash=75b9c5d85b
+Annotations: <none>
+Status: Running
+IP: 10.1.0.28
+IPs:
+IP: 10.1.0.28
+Controlled By: ReplicaSet/mywebapi-deployment-75b9c5d85b
+Containers:
+mywebapi:
+Container ID: docker://d3991187b5420eb1aacb3fbf37cd534784fe7fc0b774460f5cddf74234a35f5a
+Image: hemasri1234/mywebapi:latest
+Image ID: docker-pullable://hemasri1234/employees@sha256:772cf141206832f883c2441db5432c3310f89a8c7e8392dc95ac9da7f7938bd7
+Port: 80/TCP
+Host Port: 0/TCP
+State: Running
+Started: Wed, 11 Sep 2024 14:25:43 +0530
+Last State: Terminated
+Reason: Error
+Exit Code: 255
+Started: Fri, 23 Aug 2024 11:41:06 +0530
+Finished: Wed, 11 Sep 2024 14:25:22 +0530
+Ready: True
+Restart Count: 2
+Environment: <none>
+Mounts:
+/var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-5df5z (ro)
+Conditions:
+Type Status
+PodReadyToStartContainers True
+Initialized True
+Ready True
+ContainersReady True
+PodScheduled True
+Volumes:
+kube-api-access-5df5z:
+Type: Projected (a volume that contains injected data from multiple sources)
+TokenExpirationSeconds: 3607
+ConfigMapName: kube-root-ca.crt
+ConfigMapOptional: <nil>
+DownwardAPI: true
+QoS Class: BestEffort
+Node-Selectors: <none>
+Tolerations: node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+Type Reason Age From Message
+
+---
+
+Normal SandboxChanged 3m52s kubelet Pod sandbox changed, it will be killed and re-created.
+Normal Pulling 3m52s kubelet Pulling image "hemasri1234/mywebapi:latest"
+Normal Pulled 3m49s kubelet Successfully pulled image "hemasri1234/mywebapi:latest" in 2.496s (2.496s including waiting). Image size: 221283149 bytes.
+Normal Created 3m49s kubelet Created container mywebapi
+Normal Started 3m49s kubelet Started container mywebapi
+
+Name: mywebapi-deployment-75b9c5d85b-dljr8
+Namespace: default
+Priority: 0
+Service Account: default
+Node: docker-desktop/192.168.65.3
+Start Time: Wed, 31 Jul 2024 12:20:36 +0530
+Labels: app=mywebapi
+pod-template-hash=75b9c5d85b
+Annotations: <none>
+Status: Running
+IP: 10.1.0.34
+IPs:
+IP: 10.1.0.34
+Controlled By: ReplicaSet/mywebapi-deployment-75b9c5d85b
+Containers:
+mywebapi:
+Container ID: docker://8f1fc6bcdcc4ec2d836ed716b814493a96780c45b5fe8e36b40365c9e25e14bb
+Image: hemasri1234/mywebapi:latest
+Image ID: docker-pullable://hemasri1234/employees@sha256:772cf141206832f883c2441db5432c3310f89a8c7e8392dc95ac9da7f7938bd7
+Port: 80/TCP
+Host Port: 0/TCP
+State: Running
+Started: Wed, 11 Sep 2024 14:25:54 +0530
+Last State: Terminated
+Reason: Error
+Exit Code: 255
+Started: Fri, 23 Aug 2024 11:41:09 +0530
+Finished: Wed, 11 Sep 2024 14:25:22 +0530
+Ready: True
+Restart Count: 2
+Environment: <none>
+Mounts:
+/var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9zxjx (ro)
+Conditions:
+Type Status
+PodReadyToStartContainers True
+Initialized True
+Ready True
+ContainersReady True
+PodScheduled True
+Volumes:
+kube-api-access-9zxjx:
+Type: Projected (a volume that contains injected data from multiple sources)
+TokenExpirationSeconds: 3607
+ConfigMapName: kube-root-ca.crt
+ConfigMapOptional: <nil>
+DownwardAPI: true
+QoS Class: BestEffort
+Node-Selectors: <none>
+Tolerations: node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+Type Reason Age From Message
+
+---
+
+Normal SandboxChanged 3m52s kubelet Pod sandbox changed, it will be killed and re-created.
+Normal Pulling 3m51s kubelet Pulling image "hemasri1234/mywebapi:latest"
+Normal Pulled 3m39s kubelet Successfully pulled image "hemasri1234/mywebapi:latest" in 3.856s (12.094s including waiting). Image size: 221283149 bytes.
+Normal Created 3m38s kubelet Created container mywebapi
+Normal Started 3m38s kubelet Started container mywebapi
+
+Name: mywebapi-deployment-75b9c5d85b-nfwvn
+Namespace: default
+Priority: 0
+Service Account: default
+Node: docker-desktop/192.168.65.3
+Start Time: Wed, 31 Jul 2024 11:55:49 +0530
+Labels: app=mywebapi
+pod-template-hash=75b9c5d85b
+Annotations: <none>
+Status: Running
+IP: 10.1.0.32
+IPs:
+IP: 10.1.0.32
+Controlled By: ReplicaSet/mywebapi-deployment-75b9c5d85b
+Containers:
+mywebapi:
+Container ID: docker://8c9791041030fc6383e6640ed38150f3522e40178456f6708aff4544192d9cd0
+Image: hemasri1234/mywebapi:latest
+Image ID: docker-pullable://hemasri1234/employees@sha256:772cf141206832f883c2441db5432c3310f89a8c7e8392dc95ac9da7f7938bd7
+Port: 80/TCP
+Host Port: 0/TCP
+State: Running
+Started: Wed, 11 Sep 2024 14:25:50 +0530
+Last State: Terminated
+Reason: Error
+Exit Code: 255
+Started: Fri, 23 Aug 2024 11:40:58 +0530
+Finished: Wed, 11 Sep 2024 14:25:22 +0530
+Ready: True
+Restart Count: 2
+Environment: <none>
+Mounts:
+/var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-nt5vr (ro)
+Conditions:
+Type Status
+PodReadyToStartContainers True
+Initialized True
+Ready True
+ContainersReady True
+PodScheduled True
+Volumes:
+kube-api-access-nt5vr:
+Type: Projected (a volume that contains injected data from multiple sources)
+TokenExpirationSeconds: 3607
+ConfigMapName: kube-root-ca.crt
+ConfigMapOptional: <nil>
+DownwardAPI: true
+QoS Class: BestEffort
+Node-Selectors: <none>
+Tolerations: node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+Type Reason Age From Message
+
+---
+
+Normal SandboxChanged 3m52s kubelet Pod sandbox changed, it will be killed and re-created.
+Normal Pulling 3m51s kubelet Pulling image "hemasri1234/mywebapi:latest"
+Normal Pulled 3m43s kubelet Successfully pulled image "hemasri1234/mywebapi:latest" in 3.685s (8.27s including waiting). Image size: 221283149 bytes.
+Normal Created 3m42s kubelet Created container mywebapi
+Normal Started 3m42s kubelet Started container mywebapi
+
+Name: mywebapi-deployment-75b9c5d85b-w2f97
+Namespace: default
+Priority: 0
+Service Account: default
+Node: docker-desktop/192.168.65.3
+Start Time: Wed, 31 Jul 2024 11:55:44 +0530
+Labels: app=mywebapi
+pod-template-hash=75b9c5d85b
+Annotations: <none>
+Status: Running
+IP: 10.1.0.36
+IPs:
+IP: 10.1.0.36
+Controlled By: ReplicaSet/mywebapi-deployment-75b9c5d85b
+Containers:
+mywebapi:
+Container ID: docker://5f8332e09378b4ca1686b1cd18c98e0b8fe4b3e2d70730a738a7ad7fc92a09e2
+Image: hemasri1234/mywebapi:latest
+Image ID: docker-pullable://hemasri1234/employees@sha256:772cf141206832f883c2441db5432c3310f89a8c7e8392dc95ac9da7f7938bd7
+Port: 80/TCP
+Host Port: 0/TCP
+State: Running
+Started: Wed, 11 Sep 2024 14:25:56 +0530
+Last State: Terminated
+Reason: Error
+Exit Code: 255
+Started: Fri, 23 Aug 2024 11:41:01 +0530
+Finished: Wed, 11 Sep 2024 14:25:22 +0530
+Ready: True
+Restart Count: 2
+Environment: <none>
+Mounts:
+/var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-bgvjx (ro)
+Conditions:
+Type Status
+PodReadyToStartContainers True
+Initialized True
+Ready True
+ContainersReady True
+PodScheduled True
+Volumes:
+kube-api-access-bgvjx:
+Type: Projected (a volume that contains injected data from multiple sources)
+TokenExpirationSeconds: 3607
+ConfigMapName: kube-root-ca.crt
+ConfigMapOptional: <nil>
+DownwardAPI: true
+QoS Class: BestEffort
+Node-Selectors: <none>
+Tolerations: node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+Type Reason Age From Message
+
+---
+
+Normal SandboxChanged 3m52s kubelet Pod sandbox changed, it will be killed and re-created.
+Normal Pulling 3m51s kubelet Pulling image "hemasri1234/mywebapi:latest"
+Normal Pulled 3m37s kubelet Successfully pulled image "hemasri1234/mywebapi:latest" in 2.348s (14.41s including waiting). Image size: 221283149 bytes.
+Normal Created 3m36s kubelet Created container mywebapi
+Normal Started 3m36s kubelet Started container mywebapi
+
+Name: mywebapi-deployment-75b9c5d85b-zqfz5
+Namespace: default
+Priority: 0
+Service Account: default
+Node: docker-desktop/192.168.65.3
+Start Time: Wed, 31 Jul 2024 12:47:45 +0530
+Labels: app=mywebapi
+pod-template-hash=75b9c5d85b
+Annotations: <none>
+Status: Running
+IP: 10.1.0.30
+IPs:
+IP: 10.1.0.30
+Controlled By: ReplicaSet/mywebapi-deployment-75b9c5d85b
+Containers:
+mywebapi:
+Container ID: docker://f5bdd82a8e7efb5aaa95411259af3903b21378e82d042935de6387c1bcee67da
+Image: hemasri1234/mywebapi:latest
+Image ID: docker-pullable://hemasri1234/employees@sha256:772cf141206832f883c2441db5432c3310f89a8c7e8392dc95ac9da7f7938bd7
+Port: 80/TCP
+Host Port: 0/TCP
+State: Running
+Started: Wed, 11 Sep 2024 14:25:45 +0530
+Last State: Terminated
+Reason: Error
+Exit Code: 255
+Started: Fri, 23 Aug 2024 11:40:56 +0530
+Finished: Wed, 11 Sep 2024 14:25:22 +0530
+Ready: True
+Restart Count: 2
+Environment: <none>
+Mounts:
+/var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4k6cp (ro)
+Conditions:
+Type Status
+PodReadyToStartContainers True
+Initialized True
+Ready True
+ContainersReady True
+PodScheduled True
+Volumes:
+kube-api-access-4k6cp:
+Type: Projected (a volume that contains injected data from multiple sources)
+TokenExpirationSeconds: 3607
+ConfigMapName: kube-root-ca.crt
+ConfigMapOptional: <nil>
+DownwardAPI: true
+QoS Class: BestEffort
+Node-Selectors: <none>
+Tolerations: node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+Type Reason Age From Message
+
+---
+
+Normal SandboxChanged 3m52s kubelet Pod sandbox changed, it will be killed and re-created.
+Normal Pulling 3m51s kubelet Pulling image "hemasri1234/mywebapi:latest"
+Normal Pulled 3m47s kubelet Successfully pulled image "hemasri1234/mywebapi:latest" in 2.392s (4.614s including waiting). Image size: 221283149 bytes.
+Normal Created 3m47s kubelet Created container mywebapi
+Normal Started 3m47s kubelet Started container mywebapi
+
+Name: kubernetes
+Namespace: default
+Labels: component=apiserver
+provider=kubernetes
+Annotations: <none>
+Selector: <none>
+Type: ClusterIP
+IP Family Policy: SingleStack
+IP Families: IPv4
+IP: 10.96.0.1
+IPs: 10.96.0.1
+Port: https 443/TCP
+TargetPort: 6443/TCP
+Endpoints: 192.168.65.3:6443
+Session Affinity: None
+Events: <none>
+
+Name: mywebapi-service
+Namespace: default
+Labels: <none>
+Annotations: <none>
+Selector: app=mywebapi
+Type: LoadBalancer
+IP Family Policy: SingleStack
+IP Families: IPv4
+IP: 10.110.57.137
+IPs: 10.110.57.137
+Port: <unset> 80/TCP
+TargetPort: 8080/TCP
+NodePort: <unset> 30126/TCP
+Endpoints: 10.1.0.28:8080,10.1.0.30:8080,10.1.0.32:8080 + 2 more...
+Session Affinity: None
+External Traffic Policy: Cluster
+Events: <none>
+
+Name: mywebapi-deployment
+Namespace: default
+CreationTimestamp: Wed, 31 Jul 2024 11:52:50 +0530
+Labels: <none>
+Annotations: deployment.kubernetes.io/revision: 4
+Selector: app=mywebapi
+Replicas: 5 desired | 5 updated | 5 total | 5 available | 0 unavailable
+StrategyType: RollingUpdate
+MinReadySeconds: 0
+RollingUpdateStrategy: 25% max unavailable, 25% max surge
+Pod Template:
+Labels: app=mywebapi
+Containers:
+mywebapi:
+Image: hemasri1234/mywebapi:latest
+Port: 80/TCP
+Host Port: 0/TCP
+Environment: <none>
+Mounts: <none>
+Volumes: <none>
+Node-Selectors: <none>
+Tolerations: <none>
+Conditions:
+Type Status Reason
+
+---
+
+Progressing True NewReplicaSetAvailable
+Available True MinimumReplicasAvailable
+OldReplicaSets: mywebapi-deployment-5ff547b8cb (0/0 replicas created), mywebapi-deployment-57cbbcfb55 (0/0 replicas created)
+NewReplicaSet: mywebapi-deployment-75b9c5d85b (5/5 replicas created)
+Events: <none>
+
+Name: mywebapi-deployment-57cbbcfb55
+Namespace: default
+Selector: app=mywebapi,pod-template-hash=57cbbcfb55
+Labels: app=mywebapi
+pod-template-hash=57cbbcfb55
+Annotations: deployment.kubernetes.io/desired-replicas: 4
+deployment.kubernetes.io/max-replicas: 5
+deployment.kubernetes.io/revision: 3
+Controlled By: Deployment/mywebapi-deployment
+Replicas: 0 current / 0 desired
+Pods Status: 0 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+Labels: app=mywebapi
+pod-template-hash=57cbbcfb55
+Containers:
+mywebapi:
+Image: /mywebapi:latest
+Port: 80/TCP
+Host Port: 0/TCP
+Environment: <none>
+Mounts: <none>
+Volumes: <none>
+Node-Selectors: <none>
+Tolerations: <none>
+Events: <none>
+
+Name: mywebapi-deployment-5ff547b8cb
+Namespace: default
+Selector: app=mywebapi,pod-template-hash=5ff547b8cb
+Labels: app=mywebapi
+pod-template-hash=5ff547b8cb
+Annotations: deployment.kubernetes.io/desired-replicas: 2
+deployment.kubernetes.io/max-replicas: 3
+deployment.kubernetes.io/revision: 1
+Controlled By: Deployment/mywebapi-deployment
+Replicas: 0 current / 0 desired
+Pods Status: 0 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+Labels: app=mywebapi
+pod-template-hash=5ff547b8cb
+Containers:
+mywebapi:
+Image: anandpissey/mywebapi:latest
+Port: 80/TCP
+Host Port: 0/TCP
+Environment: <none>
+Mounts: <none>
+Volumes: <none>
+Node-Selectors: <none>
+Tolerations: <none>
+Events: <none>
+
+Name: mywebapi-deployment-75b9c5d85b
+Namespace: default
+Selector: app=mywebapi,pod-template-hash=75b9c5d85b
+Labels: app=mywebapi
+pod-template-hash=75b9c5d85b
+Annotations: deployment.kubernetes.io/desired-replicas: 5
+deployment.kubernetes.io/max-replicas: 7
+deployment.kubernetes.io/revision: 4
+deployment.kubernetes.io/revision-history: 2
+Controlled By: Deployment/mywebapi-deployment
+Replicas: 5 current / 5 desired
+Pods Status: 5 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+Labels: app=mywebapi
+pod-template-hash=75b9c5d85b
+Containers:
+mywebapi:
+Image: hemasri1234/mywebapi:latest
+Port: 80/TCP
+Host Port: 0/TCP
+Environment: <none>
+Mounts: <none>
+Volumes: <none>
+Node-Selectors: <none>
+Tolerations: <none>
+Events: <none>
+
+C:\Users\hemasri.pilli>kubectl get pods
+NAME READY STATUS RESTARTS AGE
+mywebapi-deployment-75b9c5d85b-ccshs 1/1 Running 2 (6m9s ago) 42d
+mywebapi-deployment-75b9c5d85b-dljr8 1/1 Running 2 (6m9s ago) 42d
+mywebapi-deployment-75b9c5d85b-nfwvn 1/1 Running 2 (6m9s ago) 42d
+mywebapi-deployment-75b9c5d85b-w2f97 1/1 Running 2 (6m9s ago) 42d
+mywebapi-deployment-75b9c5d85b-zqfz5 1/1 Running 2 (6m9s ago) 42d
+
+C:\Users\hemasri.pilli>kubectl logs mywebapi-deployment mywebapi-deployment-75b9c5d85b-ccshs
+error: error from server (NotFound): pods "mywebapi-deployment" not found in namespace "default"
+
+C:\Users\hemasri.pilli>kubectl logs mywebapi-deployment-75b9c5d85b-ccshs
+info: Microsoft.Hosting.Lifetime[14]
+Now listening on: http://[::]:8080
+info: Microsoft.Hosting.Lifetime[0]
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+Content root path: /app
+
+C:\Users\hemasri.pilli>
+
+## K8s
+
+-
+- ![alt text](image-339.png)
+
+## docker file
+
+- ![alt text](image-340.png)
+
+## Blob storage :
+
+- used in databases to store multimedia files and other types of files that are too large to be saved in regular fields. BLOB objects generally represent complex, large, and heavy files.
+
+## Partioning : Auto Scaling , inbuilt in Azure
+
+## Thursday(12/09/2024)
+
+## Logic Apps :
+
+- ![alt text](image-341.png)
+- to create automated workflows and integrate applications, data, and services.
+- 2 types : consumption logic app , Standard logic app
+
+## MFA
+
+- https://learn.microsoft.com/en-us/entra/identity/authentication/howto-mfaserver-windows
+
+##
