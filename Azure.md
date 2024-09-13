@@ -1535,8 +1535,6 @@ Hosting environment: Production
 info: Microsoft.Hosting.Lifetime[0]
 Content root path: /app
 
-C:\Users\hemasri.pilli>
-
 ## K8s
 
 -
@@ -1564,4 +1562,50 @@ C:\Users\hemasri.pilli>
 
 - https://learn.microsoft.com/en-us/entra/identity/authentication/howto-mfaserver-windows
 
+## Application Gateway
+
+- A gateway is a connecting point of any network that helps it to connect with different networks.
+- ![alt text](image-342.png)
+
+## Service Bus :
+
+- Multiple services can exists inside nodes
+- Cloud-based messaging platform that allows different applications, services, and systems to communicate with each other through messages.
+- It ensures reliable and asynchronous communication, handling complex messaging patterns and scenarios.
+
+## Security :
+
+- IAM is the Security fEature
+
+## Redis Database :
+
+sudo kubeadm join kubernetes.docker.internal:6443 --token unpqks.tvypizfxqsgz0qts --discovery-token-ca-cert-hash sha256:a46ab35cc9b49511ea73816d8de72e9c3e982bf8b2dda69a56aa9d277ed5d121
+
+- ![alt text](image-343.png)
+- having different url : API
+  Heirarchy of creating :
+
+## Access control Lists :
+
+- Operator nexus , adm cannot perform changes unless azure gives the permission
+- gives access to services , controls ths services , list
+
 ##
+
+- ![alt text](image-344.png)
+- Docker Area : in File System
+
+## kubernetes-Requests & Limits
+
+- ![alt text](image-345.png)
+
+## Argocd
+
+- ![alt text](image-346.png)
+- ![alt text](image-347.png)
+- Tool , having connection from github and and from application
+- ![alt text](image-348.png)
+
+## diff between cosmosDB and RedisCache
+
+- ![alt text](image-349.png)
