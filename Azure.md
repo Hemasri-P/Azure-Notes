@@ -1609,3 +1609,150 @@ sudo kubeadm join kubernetes.docker.internal:6443 --token unpqks.tvypizfxqsgz0qt
 ## diff between cosmosDB and RedisCache
 
 - ![alt text](image-349.png)
+
+## Capstone work --> full day
+
+## Monday(16/092024) : Final Capstone Submission
+
+[text](<../../../Downloads/Capstone Team1.docx.pdf>)
+
+- END TO END DEPLOYMENT OF A .NET APPLICATION
+
+1. Project Overview
+   The objective of this capstone project is to design, implement, and deploy a containerized
+   .NET-based food delivery application using a Microservices Architecture . The project will
+   be deployed across Development (Dev), Quality Assurance (QA), and Production (Prod)
+   environments utilizing Azure DevOps, Azure Container Registry (ACR), and Azure
+   Kubernetes Service (AKS).
+   This project ensures that the application is developed according to best practices such as
+   microservices architecture, which allows modularity, scalability, and separation of concerns..
+   CI/CD pipelines are leveraged to automate build, testing, and deployment, while Azure
+   Kubernetes Service is used for orchestrating containerized microservices.
+2. Technology Stack
+   Microservices Framework:- ASP.NET Core Web API (Microservices)
+   Front-End:- Blazor (for client-side)
+   Database:- SQL Database
+   Cloud Platform:- Microsoft Azure
+   Containerization:- Docker
+   Container Registry:- Azure Container Registry (ACR)
+   Orchestration:- Azure Kubernetes Service (AKS)
+   DevOps:- Azure DevOps Pipelines (CI/CD)
+   CI/CD:- Azure DevOps Pipelines
+   Monitoring:- Azure Monitor, Application Insights
+3. Key Objectives
+   ● Deploy and manage a .NET Core food delivery application based on microservices
+   across Dev, QA, and Prod environments using Docker, ACR, and AKS.
+   ● Implement Continuous Integration/Continuous Deployment (CI/CD) pipelines using
+   Azure DevOps.
+   ● Leverage Azure Kubernetes Service (AKS) for orchestrating microservices, ensuring
+   scalability, security, and fault tolerance.
+   ● Integrate Azure Portal features for managing infrastructure (e.g., Azure Key Vault,
+   Azure SQL Database, Application Insights).
+4. Development Environment Setup for Online Food Delivery Application
+   4.1 Install Visual Studio
+   ● Download and install Visual Studio (Community, Professional, or Enterprise).
+   ● Select workloads: Choose ASP.NET and web development
+   4.2 Create a New .NET Project
+   ● Open Visual Studio > Create a new project > Select ASP.NET Core Web API.
+   ● Configure project name (FoodDeliveryApp) and location.
+   4.3 Configure Local Development
+   ● Edit launchSettings.json to set up ports and environment variables.
+5. Setting Up Azure DevOps for Online Food Delivery Application
+   5.1 Create an Azure DevOps Organization and Project
+   ● Go to Azure DevOps > Create New Organization or select existing.
+   ● New Project > Enter FoodDeliveryApp > Choose Private/Public > Click Create.
+   5.2 SetUp Repos and Pipelines
+   ● Azure Repos: Create repositories for each microservice and Follow the instructions
+   to push your local repository to Azure Repos
+   git clone https://github.com/akshita-2002/Online-Food-Deliverygit remote add origin
+   git push -u origin master
+   git checkout dev
+   git add .
+   git commit -m “Changes made in payment page”
+   git push
+   ● Pull Requests : Raise pull requests to push code to Test and Prod branch
+   ● Azure Boards: Track tasks and progress with Epics, User Stories, and Tasks.
+6. Project Architecture
+   ● Microservices Architecture
+   The application is broken down into multiple microservices, each responsible for a
+   distinct business domain:
+7. Order Service: Manages the process of ordering food.
+8. Payment Service: Handles payment processing.
+9. Menu Service: Manages food menus and item availability.
+10. User Authentication Service: Manages customer accounts and authentication.
+11. Notification Service: Sends notifications (e.g., order confirmations) to
+    customers.
+    Each microservice is developed independently using ASP.NET Core Web API
+    and can communicate with each other through HTTP. Each service has its own
+    database for data persistence following the Database per Microservice pattern,
+    which ensures decoupling of services.
+    ● API Gateway:
+    An API Gateway serves as the entry point for clients to interact with the system. It
+    routes requests to the appropriate microservices, handles load balancing,
+    authentication, and authorization, and simplifies interactions between the client and
+    the backend services.
+    ● Database Layer:
+    Each microservice will use its own Azure SQL Database instance, promoting
+    independent scalability and data ownership.
+    ● Containerization:
+    Docker: Each microservice is containerized using Docker, allowing them to run
+    independently across different environments.
+    Azure Container Registry (ACR): Docker images are stored in ACR for version
+    control and efficient deployment across environments.
+    ● Orchestration:
+    Azure Kubernetes Service (AKS): Kubernetes is used for orchestrating microservices
+    in each environment (Dev, QA, Prod). AKS provides container scaling, fault
+    tolerance, and service discovery.
+    Architecture :
+12. Project Phases
+    Phase 1: Microservices Development and Containerization
+    Microservice Design:
+    Each microservice is developed independently following the SOLID principles to ensure
+    maintainability and scalability.
+    Use ASP.NET Core Web API for server connection and Blazor for client side pages
+    Dockerization of Microservices:
+    For each microservice, create a Dockerfile to build the container.
+    Dockerfile for FoodApp:
+    Phase 2: Azure Container Registry (ACR) Setup
+    Create Azure Container Registry:
+    Set up an Azure Container Registry (ACR) to store Docker images for all microservices.
+    Phase 3: CI/CD Pipeline Setup for Microservices
+    Create CI Pipeline (Build & Push Docker Images to ACR):
+    Define a pipeline in Azure DevOps that builds the microservices, creates Docker images, and
+    pushes them to ACR.
+    Azure DevOps YAML Pipeline:
+    Create CD/CI Pipeline (Deploy to AKS):
+    Set up a release pipeline in Azure DevOps for deploying the containerized microservices to
+    Azure Kubernetes Service (AKS).
+    Phase 4: Azure Kubernetes Service (AKS) and Resource Management
+    Set Up AKS Cluster:
+    Create an AKS cluster for each environment (Dev, QA, Prod).
+    Configure node pools, scaling options, and resource limits to ensure efficient resource
+    utilization.
+    Deploy Microservices to AKS:
+    Use Azure DevOps release pipelines to deploy the microservices to AKS clusters in each
+    environment.
+    Use Helm or native Kubernetes manifests to manage deployments.
+    Service Discovery and Load Balancing:
+    Set up Kubernetes Services to expose microservices within the cluster and use Ingress for
+    external access.
+    Phase 5: Testing and Monitoring
+    Unit Testing:
+    Implement Unit Testing to ensure each microservice adheres to the SOLID principles.
+    Monitoring and Logs:
+    Use Azure Monitor and Application Insights to track performance and errors in real time.
+    Set up Alerts for critical incidents (e.g., CPU spikes or service downtime).
+13. Security and Compliance :
+    7.1 Manage Permissions
+    ● Ensure that only authorized users have access to the pipelines and repositories.
+    ● Use Azure DevOps groups to manage permissions efficiently.
+    7.2 Implement Security Best Practices
+    ● Regularly review and update access permissions.
+    ● Ensure that sensitive information (like connection strings) is stored securely using
+    Azure Key Vault.
+14. Conclusion :
+    This guide provides a comprehensive overview of setting up an end-to-end pipeline for a
+    .NET-based microservice in Azure DevOps. By following these steps, you can ensure a
+    smooth development, QA, and production deployment process. Each section includes
+    essential tasks and considerations, and screenshots should be added at each step to provide
+    visual guidance.
